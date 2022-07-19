@@ -230,7 +230,7 @@ button {
     line-height: 1.36;
     letter-spacing: 0.06em;
 
-    background-color: var(--dark-bcg);
+ 
     color: var(--primary-bcg);
     text-transform: uppercase;
 }
@@ -238,7 +238,11 @@ button {
     background-color: var(--dark-bcg);
     text-align: center;
     padding: 200px 0;
-    
+    background-image:
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/layout.jpg");
+    max-width: 1600px;
+       
 }
 
 /* buttons */
@@ -304,6 +308,16 @@ button {
     color: var(--secondary-text);
     
 }
+.contact-link-icon {
+    width: 16px;
+    height: 12px;
+    align-self: center;
+    margin-right: 10px;
+    fill: currentColor;
+    
+}
+
+
 .contact-link:hover,
 .contact-link:focus {
     color: var(--hover-color);
@@ -329,6 +343,7 @@ button {
 .list.activities {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
     
     
 
@@ -362,13 +377,30 @@ button {
     margin-right: 0px;
 }
 
-/* .adv-title {
+.adv-thumb {
     width: 270px;
+    height: 120px;
+    outline: 1px solid red;
+    /* width: calc((100% - 90px) / 4); */
+    /* margin-left: 30px; */
+    background-color: #F5F4FA;
+
+    border-radius: 4px;
+    margin-bottom: 25px;
+    
+    
+
+}
+/* .adv-thumb:nth-child(4n) {
+    margin-left: 0px;
 } */
+.adv-icon {
+    width: 70 px;
+    height: 70 px; 
+    
+
+}
 .advantage {
-    
-    
-    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.71;
@@ -475,6 +507,41 @@ activities {
     border: 1px solid #eeeeee;
     border-top: 0px;
     padding: 20px 24px;
+}
+
+.social-link {
+    display: flex;
+}
+
+.social-link-item {
+    width: 44px;
+    height: 44px;
+}
+.clients-list {
+    display: flex;
+    
+}
+
+.client-item {
+    width: calc((100% - 150px) /6 );
+    margin-left: 30px;
+}
+.client-item:nth-child(6n) {
+    margin-left: 0px;
+}
+.client-icon {
+    width: 106px;
+    height: 60px;
+   
+
+}
+
+.client-item {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    widows: 170px;
+    height: 92px;
+
 }
 /* footer */
 .footer {
