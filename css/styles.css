@@ -549,6 +549,12 @@ activities {
     padding: 20px 24px;
 }
 
+.project-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);;
+}
+
 .social-link {
     display: flex;
     justify-content: center;
@@ -645,7 +651,66 @@ activities {
     padding: 60px 0;
 }
 
-.logotype {}
+.invite-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-align: left
+}
+.footer-container {
+    display: flex;
+}
+.social-list {
+    display: flex;
+    
+}
+.social_item {
+    width: calc((100 - 30px) / 4);
+    margin-right: 10px;
+}
+.social_item:nth-child(4n) {
+    margin-right: 0px;
+}
+.social_item_link {
+    display: flex;
+    color: #AFB1B8;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.social_item_link:hover {
+    color: #ffffff;
+    background-color: #2196F3;
+    overflow: hidden;
+    border-radius: 50%;
+    
+
+}
+.social-icon {
+    width: 20px;
+    height: 20px;
+    
+    fill: currentColor;
+
+}
+.footer-left {
+
+}
+
+.footer-center {
+    margin-left: 70px;
+
+}
+
+.footer-right {
+
+}
 
 .address-item {
     margin-bottom: 9px;
