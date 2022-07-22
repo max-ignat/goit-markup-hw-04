@@ -677,10 +677,11 @@ activities {
 
 .client-link:hover {
     color: var(--hover-color);
-    border-color: (--hover-color);
+   border: 1px solid var(--accent-color);
 }
 .client-link:focus {
     color: var(--hover-color);
+    border: 1px solid var(--accent-color);
 }
 /* footer */
 .footer {
