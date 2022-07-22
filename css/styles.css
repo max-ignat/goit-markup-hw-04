@@ -11,6 +11,7 @@
     --logo-font: 'Raleway', sans-serif;
     --inner-border-color: ##EEEEEE;
     --header-border-color: ##ECECEC;
+    --clients-color: #AFB1B8;
 }
 
 p,
@@ -62,7 +63,7 @@ ul {
 
 a {
     text-decoration: none;
-    display: block;
+    /* display: block; */
 }
 
 button {
@@ -71,7 +72,7 @@ button {
     padding: 10px 32px;
     cursor: pointer;
     /* font-family: Roboto; */
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    /* box-shadow: 0px 4px 4px rgb(0 0 0 / 15%); */
     border: none;
     border-radius: 4px;
 
@@ -218,21 +219,19 @@ button {
 
 .link {
     color: var(--primary-head-text)
+    font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
 }
 
 .navigation .link.current {
     color: var(--accent-color);
 }
 
-.link,
-.contact-link {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-align: left;
-}
+
+
 
 
 /* hero */
@@ -263,6 +262,7 @@ button {
     background-position: center;
     background-size: cover;
     max-width: 1600px;
+    height: 600px;
     margin: 0 auto;
 
 
@@ -316,6 +316,10 @@ button {
 .portfolio-button:focus {
     background-color: var(--hover-color);
     color: #ffffff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    
 }
 
 .filter-item {
@@ -330,14 +334,35 @@ button {
 
 /* links */
 .contact-link {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-align: left;
     color: var(--secondary-text);
-
 }
+.contact-link-bottom {
+    
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--secondary-text);
+        
+}
+.contact-link-bottom:hover,
+.contact-link-bottom:focus {
+    color: var(--hover-color);
+}
+
 
 .contact-link-icon {
     width: 16px;
     height: 12px;
-    align-self: center;
+    /* align-self: center; */
     margin-right: 10px;
     fill: currentColor;
 
@@ -373,11 +398,17 @@ button {
 .list.activities {
     display: flex;
     justify-content: center;
+    /* margin-bottom: 50px; */
+
+
+
+
+}
+
+.list.filter {
+    display: flex;
+    justify-content: center;
     margin-bottom: 50px;
-
-
-
-
 }
 
 .list.project {
@@ -523,7 +554,9 @@ activities {
 .portfolio-description {
     color: var(--secondary-text);
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.87;
+    
 }
 
 .project-item {
@@ -549,7 +582,11 @@ activities {
     padding: 20px 24px;
 }
 
-.project-item:hover {
+.grid-card-link {
+    display: block;
+
+}
+.grid-card-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);;
@@ -560,15 +597,14 @@ activities {
     justify-content: center;
     align-items: center;
     margin-top: 16px;
-    
+    gap: 10px;
 
 }
 
 .social-link-icon {
     width: 20px;
     height: 20px;
-    justify-content: center;
-    align-items: center;
+   
     fill: currentColor;
     
     /* overflow: hidden; */
@@ -580,15 +616,14 @@ activities {
     align-items: center;
     border-radius: 50%;
     color: #AFB1B8;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
 }
-.social-reference:hover {
+.social-reference:hover,
+.social-reference:focus {
     color: #ffffff;
-    background-color: #2196F3;
-    overflow: hidden;
-    width: 40px;
-    height: 40px;
+    background-color: var(--accent-color);
+    
     
 }
 
@@ -631,20 +666,22 @@ activities {
 .client-link {
     height: 92px;
     width: 100%;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--clients-color); 
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #AFB1B8;
+    color: var(--clients-color);
 
 }
 
 .client-link:hover {
     color: var(--hover-color);
-    border: 1px solid var(--hover-color);
+    border-color: (--hover-color);
 }
-
+.client-link:focus {
+    color: var(--hover-color);
+}
 /* footer */
 .footer {
     background-color: var(--dark-bcg);
@@ -666,6 +703,7 @@ activities {
 }
 .social-list {
     display: flex;
+    gap: 10px;
     
 }
 .social_item {
@@ -677,13 +715,13 @@ activities {
 }
 .social_item_link {
     display: flex;
-    color: #AFB1B8;
+    color: var(--primary-bcg);
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-        background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
 
 .social_item_link:hover {
