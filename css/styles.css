@@ -135,6 +135,7 @@ button {
 
 .logo-link {
     margin-bottom: 20px;
+    display: block;
 }
 
 .web {
@@ -212,18 +213,18 @@ button {
     margin-left: 93px;
 }
 
-.navigation :hover,
-.navigation :focus {
+.link:hover,
+.link:focus {
     color: var(--hover-color);
 }
 
 .link {
     color: var(--primary-head-text)
     font-family: Roboto;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .navigation .link.current {
@@ -334,6 +335,8 @@ button {
 
 /* links */
 .contact-link {
+    display: flex;
+    align-items: center;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
@@ -359,15 +362,20 @@ button {
 }
 
 
-.contact-link-icon {
+.contact-link-envelope {
     width: 16px;
-    height: 15px;
-    /* align-self: center; */
+    height: 12px;
     margin-right: 10px;
     fill: currentColor;
 
 }
+.contact-link-mobile {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
 
+}
 
 .contact-link:hover,
 .contact-link:focus {
@@ -633,12 +641,12 @@ activities {
     
 }
 
-/* .social-item {
+.social-item {
     width: 40px;
-    width: calc((100% - 30px) / 4);
-    margin-right: 10px;
+    /* width: calc((100% - 30px) / 4);
+    margin-right: 10px; */
     
-} */
+}
 /* .social-item:nth-child(4n) {
     margin-right: 0px;
 } */
@@ -671,7 +679,7 @@ activities {
 
 .client-link {
     height: 92px;
-    width: 100%;
+    width: 170px;
     border: 1px solid var(--clients-color); 
     border-radius: 4px;
     display: flex;
@@ -690,7 +698,7 @@ activities {
     border: 1px solid var(--accent-color);
 }
 /* footer */
-.footer {
+.footer-main {
     background-color: var(--dark-bcg);
     padding: 60px 0;
 }
@@ -705,12 +713,14 @@ activities {
     margin-bottom: 20px;
     text-align: left
 }
-.footer-container {
+.footer {
     display: flex;
+    align-items: baseline;
+    
 }
 .social-list {
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
     
 }
 .social_item {
@@ -756,9 +766,7 @@ activities {
 
 }
 
-.footer-right {
 
-}
 
 .address-item {
     margin-bottom: 9px;
