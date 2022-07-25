@@ -213,12 +213,13 @@ button {
     margin-left: 93px;
 }
 
-.link:hover,
-.link:focus {
+
+.link-header:hover,
+.link-header:focus {
     color: var(--hover-color);
 }
 
-.link {
+.link-header {
     color: var(--primary-head-text)
     font-family: Roboto;
     font-size: 14px;
@@ -227,11 +228,16 @@ button {
     letter-spacing: 0.02em;
 }
 
-.navigation .link.current {
+
+
+.navigation .link-header.current {
     color: var(--accent-color);
 }
 
-
+.link {
+    color: #212121;
+    text-decoration: none;
+}
 
 
 
