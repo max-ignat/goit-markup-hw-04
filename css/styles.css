@@ -595,7 +595,26 @@ activities {
     border-top: 0px;
     padding: 20px 24px;
 }
-
+.grid-card-wrap {
+    position: relative;
+}
+.grid-card-text {
+    /* position: absolute;
+            top: 0;
+            left: 0;
+            color: #FFFFFF;
+            background-color: rgba(33, 150, 243, 0.9);
+            padding: 63px 24px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 1.56;
+            letter-spacing: 0.03em;
+            height: 100%;
+            transform: translateY(100%); */
+       
+}
 .grid-card-link {
     display: block;
 
